@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Javascript</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.1.Carousel.html"
+        class="waves-effect waves-light btn   light-blue green darken-4" >Carousel</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.2.Collapse et Dropdown.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4" >Collapse et dropdown</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.3.Modal et parallax.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4">Modal et parallax</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.4.ScrollSpy.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4">Scrollspy</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.5.Toast et tooltips.html" disabled
+        class="waves-effect waves-light btn   light-blue green darken-4">Tost et Tooltip</a></div>
+      <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.6.Waves.html"
+          class="waves-effect waves-light btn   light-blue green darken-4">Waves</a></div>
+ 
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+<div class="container">
+  <h5>Toast</h5>
+
+  <!-- Toast classique -->
+  <!-- onclick="M.toast({html: 'I am a toast'})" -->
+    <!-- <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a> -->
+    
+    
+    <!-- Toast arrondi -->
+    <!-- <a onclick=" M.toast({html: 'I am a toast!', classes: 'rounded'});" class="btn">Toast!</a> -->
+  
+    <!-- Toast personalisé -->
+  <!-- onclick="M.toast({html: toastHTML}) -->
+  <!-- <a onclick="M.toast({html: toastHTML})" class="btn">Toast!</a> -->
+
+  <!-- Toast callback -->
+  <!-- <a class="btn" onclick="M.toast({html: 'Je suis un Toast', completeCallback: function(){alert('Le toast est fermer')}})">Toast!</a> -->
+
+  <script>
+
+
+    // toast personalisé
+    //  var toastHTML = '<span>I am toast content</span><button class="btn-flat toast-action">Undo</button>';
+    //   M.toast({ html: toastHTML });
+  </script>
+
+
+<br><br><br>
+<hr>
+  <h5>Tooltip</h5>
+  <!-- btn + tooltipped -->
+  <!-- data-position="left|bottom|right|top" = pour le sens d'apparaition -->
+<a class="btn tooltipped" data-position="bottom" data-tooltip="Bonjour">Hover me!</a>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems);
+    });
+
+</script>
+
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

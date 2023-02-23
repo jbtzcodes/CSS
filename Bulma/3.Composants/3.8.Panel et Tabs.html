@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
+  <!-- font-awesome -->
+
+  <title>Bulma</title>
+</head>
+
+<body style="padding: 0px 10px;">
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content ">
+        <h1 class="title is-2 my-2">Composants</h1>
+        <a href="./3.1.Breadcrumb.html"  class="button is-success m-2 ">Breadcrumb</a>
+        <a href="./3.2.Carte.html"  class="button is-success m-2 ">Carte</a>
+        <a href="./3.3.Dropdown et menu.html" class="button is-success m-2 ">Dropdown et Menu</a>
+        <a href="./3.4.Message.html" class="button is-success m-2 ">Message</a>
+        <a href="./3.5.Modal.html"  class="button is-success m-2 ">Modal</a>
+        <a href="./3.6.Navigation.html"  class="button is-success m-2 ">Navigation</a>
+        <a href="./3.7.Pagination.html" class="button is-success m-2 ">Pagination</a>
+        <a href="./3.8.Panel et Tabs.html" disabled class="button is-success m-2 ">Panel et tabs</a>
+       
+       
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <!--  #################### Début formation -->
+<br><br>
+    <h6 class="title has-text-centered ">Panel </h6>
+    <br><br>
+
+<!-- panel + is-primary|danger|etc.. = sur le parent -->
+<!-- panel-heading = pour le header -->
+<!-- panel-tabs = sur la navigation -->
+<!-- pannel-block = suur les éléments du pannel -->
+<!-- pannel-icon = sur l'icone de l'element -->
+<article class="panel is-primary">
+  <p class="panel-heading">
+    Primary
+  </p>
+  <p class="panel-tabs">
+    <a class="is-active">All</a>
+    <a>Public</a>
+    <a>Private</a>
+    <a>Sources</a>
+    <a>Forks</a>
+  </p>
+  <div class="panel-block">
+    <p class="control has-icons-left">
+      <input class="input is-primary" type="text" placeholder="Search">
+      <span class="icon is-left">
+        <ion-icon name="search-circle-outline"></ion-icon>
+      </span>
+    </p>
+  </div>
+  <a class="panel-block is-active">
+    <span class="panel-icon">
+      <ion-icon name="search-circle-outline"></ion-icon>
+    </span>
+    bulma
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <ion-icon name="search-circle-outline"></ion-icon>
+    </span>
+    marksheet
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+    <ion-icon name="search-circle-outline"></ion-icon>
+    </span>
+    minireset.css
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <ion-icon name="search-circle-outline"></ion-icon>
+    </span>
+    jgthms.github.io
+  </a>
+</article>
+    
+
+<br><br><br>
+
+<br><br>
+<h6 class="title has-text-centered ">Tabs </h6>
+<br><br>
+
+
+<!-- tabs = sur le container de la liste -->
+<!-- + is-centred|left|right pour l'alignement -->
+<!-- + is-small|medium|large pour la taille -->
+
+<div class="tabs is-centered">
+  <ul>
+    <li class="is-active"><a>Pictures</a></li>
+    <li><a>Music</a></li>
+    <li><a>Videos</a></li>
+    <li><a>Documents</a></li>
+  </ul>
+</div>
+<br><br>
+<!-- 2eme exemple -->
+<!-- + is-toggle sur le container-->
+<div class="tabs is-toggle">
+  <ul>
+    <li class="is-active">
+      <a>
+        <span class="icon is-small">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </span>
+        <span>Pictures</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </span>
+        <span>Music</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </span>
+        <span>Videos</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </span>
+        <span>Documents</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../app.js"></script>
+</body>
+
+</html>

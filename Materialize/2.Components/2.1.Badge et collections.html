@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Components</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.1.Badge et collections.html"
+        class="waves-effect waves-light btn   light-blue darken-4" disabled>Badges et collections</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.2.Boutons et breadcrumbs.html"
+             class="waves-effect waves-light btn   light-blue darken-4">Boutons et breadcrumbs</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.3.Cartes.html"
+        class="waves-effect waves-light btn   light-blue darken-4">Cartes</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.4.Icones et Footer.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Icones et footer</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.5.Navbar et pagination.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Navbar et pagination</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.6.Preloader.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Préloader</a></div>
+ 
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+
+  <div class="container">
+  <h5>Collections</h5>
+<!-- collection = sur le parent -->
+<!-- collection-item = sur les enfants -->
+  <ul class="collection">
+    <li class="collection-item">Item</li>
+    <li class="collection-item">Item</li>
+    <li class="collection-item">Item</li>
+    <li class="collection-item">Item</li>
+  </ul>
+<br><br>
+
+<!-- Il est possible de le faire avec des liens -->
+<!-- active = pour démarquer celui ou on ce trouve -->
+   <div class="collection">
+        <a href="#!" class="collection-item">Item</a>
+        <a href="#!" class="collection-item active">Item</a>
+        <a href="#!" class="collection-item">Item</a>
+        <a href="#!" class="collection-item">Item</a>
+    </div>
+
+    <br><br>
+
+<!--  avec un header -->
+<!-- collection + collection-header -->
+<ul class="collection with-header">
+  <li class="collection-header">
+    <h4>TITRE HEADER</h4>
+  </li>
+    <li class="collection-item">Item</li>
+    <li class="collection-item">Item</li>
+    <li class="collection-item">Item</li>
+    <li class="collection-item">Item</li>
+</ul>
+
+<br><br>
+
+
+<!-- avec un deuxieme contenu -->
+<!-- secondary-content -->
+<ul class="collection with-header">
+  <li class="collection-header">
+    <h4>Titre header</h4>
+  </li>
+  <li class="collection-item">
+    <div>Item<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+  </li>
+  <li class="collection-item">
+    <div>Item<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+  </li>
+  <li class="collection-item">
+    <div>Item<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+  </li>
+  <li class="collection-item">
+    <div>Item<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+  </li>
+</ul>
+
+<br><br>
+
+
+
+<!-- Avec un avatar -->
+<!-- collection-item + avatr -->
+<ul class="collection">
+  <li class="collection-item avatar">
+    <i class="material-icons circle">folder</i>
+    <span class="title">Title</span>
+    <p>Titre <br>
+      sous-titre
+    </p>
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+  </li>
+  <li class="collection-item avatar">
+    <i class="material-icons circle green">insert_chart</i>
+    <span class="title">Title</span>
+    <p>Titre <br>
+      sous-titre
+    </p>
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+  </li>
+  <li class="collection-item avatar">
+    <i class="material-icons circle red">play_arrow</i>
+    <span class="title">Title</span>
+    <p>Titre <br>
+      sous-titre
+    </p>
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+  </li>
+</ul>
+
+<br><br>
+<hr>
+
+
+  <h5>Badge</h5>
+  <!-- badge -->
+  <!-- new + badge = pour un badge stylisé -->
+  <div class="collection">
+    <a href="#!" class="collection-item"><span class="badge">1</span>Item</a>
+    <a href="#!" class="collection-item"><span class="new badge">4</span>Item</a>
+    <a href="#!" class="collection-item">Item</a>
+    <a href="#!" class="collection-item"><span class="badge">14</span>Item</a>
+  </div>
+
+  </div>
+
+  
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

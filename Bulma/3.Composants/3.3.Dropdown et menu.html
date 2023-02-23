@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
+  <!-- font-awesome -->
+
+  <title>Bulma</title>
+</head>
+
+<body style="padding: 0px 10px;">
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content ">
+        <h1 class="title is-2 my-2">Composants</h1>
+    <a href="./3.1.Breadcrumb.html"  class="button is-success m-2 ">Breadcrumb</a>
+    <a href="./3.2.Carte.html"  class="button is-success m-2 ">Carte</a>
+    <a href="./3.3.Dropdown et menu.html" disabled class="button is-success m-2 ">Dropdown et Menu</a>
+     <a href="./3.4.Message.html" class="button is-success m-2 ">Message</a>
+    <a href="./3.5.Modal.html" class="button is-success m-2 ">Modal</a>
+    <a href="./3.6.Navigation.html" class="button is-success m-2 ">Navigation</a>
+    <a href="./3.7.Pagination.html" class="button is-success m-2 ">Pagination</a>
+    <a href="./3.8.Panel et Tabs.html" class="button is-success m-2 ">Panel et tabs</a>
+       
+       
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <!--  #################### Début formation -->
+<br><br>
+    <h6 class="title has-text-centered ">Dropdown</h6>
+    <br><br>
+  
+<!--  dropdown = sur le container global -->
+<!-- dropdown-trigger = sur le container à bouton -->
+<!-- dropdown-menu = sur le container du menu -->
+<!-- dropdown-content = sur le container du contenu -->
+<!-- dropdown-item = sur les enfants -->
+<!-- dropdown-divider = sur la balise HR pour créer une démarcation -->
+
+<div class="dropdown is-active">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+      <span>Dropdown button</span>
+      <span class="icon is-small">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item">
+        Dropdown item
+      </a>
+      <a class="dropdown-item">
+        Dropdown item
+      </a>
+      <a href="#" class="dropdown-item is-active">
+        Dropdown item
+      </a>
+      <a href="#" class="dropdown-item">
+        Dropdown item
+      </a>
+      <hr class="dropdown-divider">
+      <a href="#" class="dropdown-item">
+        Dropdown item
+      </a>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+
+<!-- 2eme exemple dropdown survolable -->
+
+<!-- dropdown + is-hoverlable -->
+</div>
+<div class="dropdown is-hoverable">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+      <span>Survole</span>
+      <span class="icon is-small">
+        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+    <div class="dropdown-content">
+      <div class="dropdown-item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquam, sequi cumque quia eligendi esse dolorum eaque cum voluptate illum?</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="dropdown" id="drop">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+      <span>Boutton</span>
+      <span class="icon is-small">
+        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item">
+        Item
+      </a>
+      <a class="dropdown-item">
+        Item
+      </a>
+      <a href="#" class="dropdown-item">
+      Item
+      </a>
+      <a href="#" class="dropdown-item">
+        Item
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  var drop = document.getElementById("drop");
+  drop.addEventListener("click", function(){
+    drop.classList.toggle("is-active")
+  })
+</script>
+
+<br><br><br>
+<br><br><br>
+
+    <h6 class="title has-text-centered ">Menu</h6>
+
+    <!--  Créer un menu -->
+    <!--  menu = sur le container -->
+    <!--  menu-label = sur les labels -->
+    <!--  menu-list = pour créer un 2ème niveau -->
+<aside class="menu">
+  <p class="menu-label">
+    Menu 1
+  </p>
+  <ul class="menu-list">
+    <li><a>Catégories</a></li>
+    <li><a>Catégories</a></li>
+  </ul>
+  <p class="menu-label">
+    Menu 2
+  </p>
+  <ul class="menu-list">
+    <li><a>Catégorie</a></li>
+    <li>
+      <a class="is-active">Catégorie</a>
+      <ul>
+        <li><a> Sous catégorie</a></li>
+        <li><a> Sous catégorie</a></li>
+        <li><a> Sous catégorie</a></li>
+      </ul>
+    </li>
+    <li><a>Catégorie</a></li>
+    <li><a>Catégorie</a></li>
+    <li><a>Catégorie</a></li>
+  </ul>
+  <p class="menu-label">
+    Menu 3
+  </p>
+  <ul class="menu-list">
+    <li><a>Catégorie</a></li>
+    <li><a>Catégorie</a></li>
+    <li><a>Catégorie</a></li>
+  </ul>
+</aside>
+
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../app.js"></script>
+</body>
+
+</html>

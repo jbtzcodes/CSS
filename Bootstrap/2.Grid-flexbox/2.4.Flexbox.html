@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>BOOTSTRAP</title>
+</head>
+
+<body>
+
+  <!-- ############################################ Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../src/flavicon.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ################# DEBUT DE LA FORMATION ################# -->
+
+  <h1 class="text-center text-primary mt-5">Flexbox</h1>
+
+<!-- Utiliser flexbox -->
+
+<div class="container mt-5 mb-5">
+  <div class="bg-dark d-flex">
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+  </div>
+</div>
+
+<!-- on peut changer le display avec les breack points -->
+
+<div class="container mb-5">
+  <div class="bg-dark d-lg-flex">
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+  </div>
+</div>
+
+<!-- Aligner sur x avec justify-content-center|start|end|between|envenly|around -->
+
+<div class="container mb-5">
+  <div class="bg-dark d-flex justify-content-between ">
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+  </div>
+</div>
+
+<!-- Aligner sur y avec Align-items-center|start|end|-->
+
+<div class="container mb-5">
+  <div style="height: 200px;" class="bg-dark d-flex align-items-end">
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+  </div>
+</div>
+
+<!-- Flex-direction pour gerer la direction -->
+<!-- flex-row|row-reverse|column|column-reverse -->
+<div class="container mb-5">
+  <div style="height: 200px;" class="bg-dark d-flex flex-row-reverse ">
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+    <p class="text-white">Hello</p>
+  </div>
+</div>
+
+<!-- Aligner au cas par cas -->
+<!-- align-self-start|end|center|baseline -->
+<div class="container mb-5">
+  <div style="height: 200px;" class="bg-dark d-flex">
+    <p class="text-white  align-self-start">Hello</p>
+    <p class="text-white align-self-end">Hello</p>
+    <p class="text-white align-self-baseline">Hello</p>
+  </div>
+</div>
+
+
+<!-- Fill = rempli avec de l'espace -->
+<!-- flex-fill = flex: 1 1 auto; -->
+<div class="container mb-5">
+  <div style="height: 200px;" class="bg-dark d-flex">
+    <p class="text-white flex-fill">Hello</p>
+    <p class="text-white ">Hello</p>
+    <p class="text-white">Hello</p>
+  </div>
+</div>
+
+
+<!-- flex-grow-1|2|3|... -->
+<div class="container mb-5">
+  <div style="height: 200px;" class="bg-dark d-flex">
+    <p class="bg-success p-3 text-white flex-grow-2">Hello</p>
+    <p class="bg-info p-3 text-white flex-grow-1 ">Hello</p>
+    <p class="bg-danger p-3 text-white">Hello</p>
+  </div>
+</div>
+
+<!-- flex-shrink-0|1 -->
+<div class="container mb-5">
+  <div style="height: 200px;" class="bg-dark d-flex">
+    <p class="w-100 bg-success p-3 text-white flex-shrink-0">Hello</p>
+    <p class="w-100 bg-info p-3 text-white ">Hello</p>
+    <p class="w-100 bg-danger p-3 text-white">Hello</p>
+  </div>
+</div>
+
+<!-- Marges horizontales -->
+<!-- ms|me-auto -->
+<div class="container mb-5">
+  <div style="height: 200px;" class="bg-dark d-flex">
+    <p class="bg-success p-3 text-white ms-auto ">Hello</p>
+    <p class="bg-info p-3 text-white me-auto">Hello</p>
+    <p class="bg-danger p-3 text-white">Hello</p>
+  </div>
+</div>
+
+<!-- Marge verticales -->
+<!-- mt|mb-auto -->
+<div class="container mb-5">
+  <div style="height: 200px;" class="bg-dark d-flex">
+    <p class="bg-success p-3 text-white mt-auto">Hello</p>
+    <p class="bg-info p-3 text-white mb-auto ">Hello</p>
+    <p class="bg-danger p-3 text-white">Hello</p>
+  </div>
+</div>
+
+<!-- Flex-wrap -->
+<!-- flex-wrap|nowrap -->
+<div class="container mb-5">
+  <div style="height: auto;" class="bg-dark d-flex flex-nowrap">
+    <p style="width: 200px" class="bg-success p-3 text-white">Hello</p>
+    <p style="width: 200px" class="bg-info p-3 text-white ">Hello</p>
+    <p style="width: 200px" class="bg-danger p-3 text-white">Hello</p>
+  </div>
+</div>
+
+<!-- Order-->
+<!-- order-1|2|3|... -->
+<div class="container mb-5">
+  <div style="height: auto;" class="bg-dark d-flex">
+    <p style="width: 200px" class="bg-success p-3 text-white order-3 ">1</p>
+    <p style="width: 200px" class="bg-info p-3 text-white order-1">2</p>
+    <p style="width: 200px" class="bg-danger p-3 text-white order-2 ">3</p>
+  </div>
+</div>
+
+
+
+
+<!-- Align-content -->
+<!-- align-content-start|end|center| -->
+<div class="container mb-5 ">
+  <div style="height: 400px;" class="bg-dark p-3 d-flex  flex-wrap align-content-center ">
+    <p style="width: 250px" class=" bg-success p-3 text-white ">1</p>
+    <p style="width: 250px" class=" bg-info p-3 text-white ">2</p>
+    <p style="width: 250px" class=" bg-danger p-3 text-white ">3</p>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  <!--  footer -->
+
+  <footer class="bg-dark d-flex justify-content-center align-items-center flex-column px-2 mt-5">
+    <div class="footer-liens">
+      <img class="d-block m-auto mb-4" src="../src/flavicon.png" alt="">
+    </div>
+    <hr>
+    <p class="text-center text-white">&copy; - La minute de code design - 2022 - tout droits réservés</p>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

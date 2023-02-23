@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Bulma</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content ">
+          <h1 class="title is-2 my-2">Les bases</h1>
+        <a href="./1.1.Typographies.html"  class="button is-danger m-2 ">Typographies</a>
+        <a href="./1.2.Couleurs.html" class="button is-danger m-2 ">Les couleurs</a>
+        <a href="./1.3.Positionnements.html" disabled class="button is-danger m-2 ">Positionnements</a>
+        <a href="./1.4.Displays.html" class="button is-danger m-2 ">Display</a>
+        <a href="./1.5.Grid partie 1.html" class="button is-danger m-2 ">Grid partie 1</a>
+        <a href="./1.6.Grid partie 2.html" class="button is-danger m-2 ">Grid partie 2</a>
+      </div>
+    </div>
+  </div>
+
+<h6 class="title has-text-centered ">Positionnement</h6>
+<br><br><br>
+<!--  #################### Début formation -->
+
+<div class="columns is-mobile is-centered">
+  <div class="column is-two-thirds">
+    <br><br>
+    <!-- Float -->
+    <!-- is-pulled-right|left -->
+    <div class="is-pulled-right">Float droite</div>
+    <div class="is-pulled-left">Float gauche</div>
+    <br><br><br>
+    <!-- clearfix -->
+    <!-- is-clearfix  -->
+    <div class="is-clearfix     has-background-dark has-text-white">
+      <img style="width: 100px; " class="is-pulled-right" src="../src/flavicon.png" alt="logo de la minute de code">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, rem nobis explicabo nemo ab voluptatum quos iusto sit quia quis?
+    </div>
+    <br><br>
+    <!-- Overflow -->
+    <!-- is-clipped -->
+    <div style="height: 80px;" class="is-clipped          has-background-dark has-text-danger">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et perspiciatis rerum ex corporis ducimus tempora repudiandae alias adipisci voluptatem, aspernatur hic iure recusandae unde, libero mollitia quasi dolore! Consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, laborum dolor? A, voluptatibus commodi molestias animi in mollitia sed enim.</p>
+    </div>
+    <br><br>
+    <!-- Enlever marges -->
+    <!-- Enlever le margin: is-marginless -->
+    <!-- Enlever le padding: is-paddingless -->
+    <h1 style="margin: 10px" class="is-marginless       has-background-dark has-text-white ">Je suis un titre</h1>
+    <h1 style="padding: 10px" class="is-paddingless              has-background-dark has-text-white">Je suis un titre</h1>
+
+    <!-- Cacher un élément -->
+    <!-- is-invisible: disparait mais reste dans le flux -->
+    <!-- is-hidden: disparait du flux -->
+    <br><br>
+    <p class="is-invisible">Je suis du texte</p>
+    <p class="is-hidden">Je suis du texte</p>
+
+    <br><br>
+    <!-- Cacher un élément pour les utilisateurs mais pas pour les liseuses d'ecrans -->
+    <!-- is-sr-only -->
+    <p class="is-sr-only">Je suis du texte</p>
+    <br><br>
+    <!-- Position relative -->
+    <!-- is-relative -->
+    <!-- position: absolute devra être rajouter mannuellement en CSS -->
+    <div class="is-relative ">Position relative</div>
+    <br><br>
+    <!-- Couvrir le parent avec l'enfant -->
+    <!-- is-relative sur le parent -->
+    <!-- is-overlay sur l'enfant -->
+    <div style="height: 300px" class="is-relative">
+      <div class="is-overlay     has-background-dark has-text-white">Je suis du texte</div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+  <script src="../app.js"></script>
+</body>
+
+</html>

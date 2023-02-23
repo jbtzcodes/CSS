@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Bulma</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content ">
+        <h1 class="title is-2 my-2">Elements</h1>
+        <a href="./2.1.Box et boutons.html" disabled class="button is-dark m-2 ">Box et boutons</a>
+        <a href="./2.2.Content et icones.html"  class="button is-dark m-2 ">Content et icones</a>
+        <a href="./2.3.Les images.html" class="button is-dark m-2 ">Les images</a>
+        <a href="./2.4.Notification et progressbar.html" class="button is-dark m-2 ">Notifications et progressbar</a>
+      <a href="./2.5.Table et tag.html" class="button is-dark m-2 ">Table et Tag</a>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+
+
+    <h6 class="title has-text-centered ">Box</h6>
+    <br><br>
+    <!--  #################### Début formation -->
+    <!-- box = sur le container -->
+    <div class="box has-background-primary">
+      <p>Je suis une box</p>
+    </div>
+
+
+    <h6 class="title has-text-centered ">Les boutons</h6>
+    <br><br>
+    <!-- Créer un bouton -->
+    <!-- button = sur la balise button | a ou sur un input -->
+
+    <button class="button">Button</button>
+    <a class="button">Balise A</a>
+    <input class="button" type="submit" value="Envoyer">
+    <input class="button" type="reset" value="Reset input">
+
+    <br><br><br>
+    
+   <!-- Couleur de fond boutons -->
+   <!-- buttons = sur le parent pour former des listes de boutons -->
+    <!-- button + is-warning|danger|success|primary|etc -->
+  
+  <div class="buttons">
+    <button class="button is-info">Info</button>
+    <button class="button is-success">Success</button>
+    <button class="button is-warning">Warning</button>
+    <button class="button is-danger">Danger</button>
+
+    <!-- Verssion light -->
+    <div class="buttons">
+      <button class="button is-info is-light">Info</button>
+      <button class="button is-success is-light">Success</button>
+      <button class="button is-warning is-light">Warning</button>
+      <button class="button is-danger is-light">Danger</button>
+    </div>
+  </div>
+
+<br><br><br>
+
+  <!-- Tailles boutons -->
+<!-- button + is-small|default|normal|medium|large -->
+  <button class="button is-small">Small</button>
+  <button class="button">Default</button>
+  <button class="button is-normal">Normal</button>
+  <button class="button is-medium">Medium</button>
+  <button class="button is-large">Large</button>
+
+
+  <!-- Modifier taille d'une liste de boutons -->
+  <!-- buttons + are-small|medium|large -->
+
+  <div class="buttons are-medium">
+    <button class="button">All</button>
+    <button class="button">Medium</button>
+    <button class="button">Size</button>
+  </div>
+
+  <!-- boutons responsive -->
+  <!-- button + is-small|normal|medium|large + is-responsive -->
+  <button class="button is-responsive">
+    Default
+  </button>
+  <button class="button is-small is-responsive">
+    Small
+  </button>
+  <button class="button is-normal is-responsive">
+    Normal
+  </button>
+  <button class="button is-medium is-responsive">
+    Medium
+  </button>
+  <button class="button is-large is-responsive">
+    Large
+  </button>
+
+  <br><br><br>
+
+  <!-- boutons arrondis -->
+  <!-- button + is-rounded -->
+  <button class="button is-success is-rounded">Rounded</button>
+  <button class="button is-danger is-rounded">Rounded</button>
+  <br><br><br><br>
+
+  <!-- boutons load -->
+<!-- button + is-loading  -->
+  <button class="button is-primary is-loading">Loading</button>
+
+  <br><br><br>
+  
+
+  <!-- désactiver un bouton -->
+  <!-- Disabled ou is-static -->
+  <span class="button is-static">Static</span>
+
+<br><br><br>
+  <!-- groupe de boutons-->
+<!-- field + has-abbon = sur le container parent-->
+<!-- control sur le container -->
+<!-- button sur le bouton -->
+<div class="field has-addons">
+  <p class="control">
+    <button class="button">
+      <span>Left</span>
+    </button>
+  </p>
+  <p class="control">
+    <button class="button">
+      <span>Center</span>
+    </button>
+  </p>
+  <p class="control">
+    <button class="button">
+      <span>Right</span>
+    </button>
+  </p>
+</div>
+
+<br><br><br>
+
+<!-- bouton delete -->
+
+<button class="delete"></button>
+
+<br><br><br>
+
+
+</div>
+
+
+
+  <script src="../app.js"></script>
+</body>
+
+</html>

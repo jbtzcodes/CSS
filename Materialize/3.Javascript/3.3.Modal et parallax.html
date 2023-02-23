@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Javascript</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.1.Carousel.html"
+        class="waves-effect waves-light btn   light-blue green darken-4" >Carousel</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.2.Collapse et Dropdown.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4" >Collapse et dropdown</a></div>
+        <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href=".//3.3.Modal et parallax.html" disabled
+          class="waves-effect waves-light btn   light-blue green darken-4">Modal et parallax</a></div>
+          <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.4.ScrollSpy.html" 
+              class="waves-effect waves-light btn   light-blue green darken-4" >Scrollspy</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.5.Toast et tooltips.html"
+        class="waves-effect waves-light btn   light-blue green darken-4">Tost et Tooltip</a></div>
+      <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.6.Waves.html" 
+          class="waves-effect waves-light btn   light-blue green darken-4">Waves</a></div>
+ 
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+<div class="container">
+  <h5>Modal</h5>
+
+<!-- modal-trigger = pour créer un bouton d'action modal -->
+<!-- Modal Trigger -->
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+<!-- Modal Structure -->
+<!-- modal = sur le container -->
+<!-- modal-content = sur le container du contenu -->
+<!-- modal-footer = pour le footer de la modal -->
+<!-- lien avec la classe "modal-close" pour le bouton de fermeture -->
+
+
+<!-- on peut rajouter bottom-sheet|modal-fixed-footer -->
+<div id="modal1" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4>Titre</h4>
+    <p>Hello depuis la modale</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+      });
+</script>
+
+
+
+
+<br><br>
+<hr>
+<h5>Parallax</h5>
+
+<div class="parallax-container">
+  <div class="parallax"><img src="https://source.unsplash.com/random/"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+      });
+</script>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos similique voluptatibus suscipit voluptatem quisquam rem sequi porro a ducimus exercitationem? Totam officia iusto aliquid neque quaerat molestiae perspiciatis voluptate ad vel ab! Corporis perferendis sapiente odit aliquam voluptates aspernatur nobis maiores. Cum reiciendis numquam recusandae sapiente distinctio maxime cumque dicta sed omnis provident? Asperiores est nam omnis minima sunt eaque quo consequuntur beatae et fugit aut, placeat odio ex debitis, maxime repellendus? Dolores, quia nam odit, reprehenderit tempore ipsam molestiae id beatae provident qui enim, cum earum eos minus! Accusantium asperiores id quidem molestiae vero aperiam ipsum. Quo dolores sapiente eos quisquam architecto voluptatibus rerum? Obcaecati vero unde aliquam quam eaque itaque incidunt quibusdam non expedita rem voluptatibus quisquam dolore, laudantium ea nisi asperiores iusto veniam nesciunt ipsam vel sint cum inventore! Modi officiis quam rem. Quos, illum saepe? Delectus eveniet in reiciendis. Quo soluta cum expedita repudiandae sit ipsam inventore! Illo eligendi temporibus incidunt? Eveniet minus aut, quae aliquid incidunt quisquam quis praesentium eligendi et sed dolore vero, quos aperiam fugit architecto voluptatum id voluptatem necessitatibus illo distinctio excepturi accusantium pariatur vitae! Rerum esse, suscipit unde corporis dolores nesciunt maxime, delectus nulla consequatur ex facilis sed! Voluptates sit ratione rerum perferendis unde deleniti temporibus, aperiam tempore, exercitationem architecto sed aliquam repudiandae illum atque quia molestias qui voluptate esse cumque facilis minus laboriosam explicabo. Quaerat minima obcaecati suscipit. Reprehenderit molestiae ea deserunt? Facilis, in atque animi sunt, ducimus alias sint officiis nesciunt deleniti fugit quibusdam adipisci porro blanditiis corporis assumenda esse quis dolore pariatur perspiciatis, accusantium libero consequatur recusandae. Nihil soluta sunt eum unde nemo laborum tempore laboriosam debitis molestias, quidem facere expedita. Sed, voluptatibus. Hic non, aspernatur voluptatum, nobis enim et perspiciatis asperiores laborum maiores in reiciendis libero animi iure maxime, quas pariatur delectus distinctio debitis aliquid unde soluta sapiente corrupti sunt? Atque mollitia totam numquam modi optio quidem dicta similique qui molestiae impedit delectus rerum expedita ducimus pariatur provident sed molestias, dolor autem quasi voluptatum? Eius, eveniet. Sequi, enim? Animi perferendis nemo expedita quod consequatur voluptatem. Sed quia temporibus, quae officiis minima totam quidem necessitatibus tempore iure expedita doloremque tempora earum ullam dolore natus! Iure velit veritatis unde nemo minima, placeat pariatur in blanditiis est doloribus eos tempora architecto sapiente, explicabo error illo ipsum? Tempore illum quibusdam, necessitatibus itaque autem eos, vitae asperiores nulla dicta totam beatae quo eligendi. Exercitationem, sed velit harum qui facilis aperiam laudantium assumenda similique totam ea quasi illo eum! Pariatur similique dolore officiis eveniet enim nulla, vero amet? Consequatur, vel numquam. Facere tempora odit odio facilis cum nulla nemo perferendis, mollitia, eveniet molestias aperiam a illo eos quia! Hic facilis deleniti maxime odio quia suscipit amet pariatur error, ex nulla nemo eum similique, eos corporis voluptas? Autem, inventore? Incidunt nostrum non adipisci dicta voluptates eligendi unde? Necessitatibus cum doloremque debitis repellendus nihil vero possimus unde tempore minima? Quasi ea, soluta facilis laudantium accusamus facere cum magnam quaerat mollitia, harum laboriosam nemo labore aliquid tempore odit. Minima impedit vero numquam voluptates sunt dolore incidunt!/p>
+
+
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

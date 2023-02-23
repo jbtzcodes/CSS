@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- font-awesome -->
+
+  <title>Bulma</title>
+</head>
+
+<body style="padding: 0px 10px;">
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content ">
+        <h1 class="title is-2 my-2">Elements</h1>
+        <a href="./2.1.Box et boutons.html" class="button is-dark m-2 ">Box et boutons</a>
+        <a href="./2.2.Content et icones.html" class="button is-dark m-2 ">Content et icones</a>
+        <a href="./2.3.Les images.html" disabled class="button is-dark m-2 ">Les images</a>
+          <a href="./2.4.Notification et progressbar.html"  class="button is-dark m-2 ">Notifications et progressbar</a>
+      <a href="./2.5.Table et tag.html" class="button is-dark m-2 ">Table et Tag</a>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+
+<br><br>
+    <h6 class="title has-text-centered ">Les images</h6>
+    <br><br>
+    <!--  #################### Début formation -->
+
+
+    <!-- Image responsive -->
+    <!-- image = sur le parent figure -->
+    
+    <figure class="image">
+      <img
+        src="https://images.unsplash.com/photo-1667337104773-6cb54f6dd102?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80">
+    </figure>
+    
+    <br><br><br>
+
+
+<!-- image + is-16x16|24x24|32x32|48x48|64x64|96x96|128x128 = sur la balise figure -->
+<figure class="image is-128x128">
+  <img src="https://images.unsplash.com/photo-1667337104773-6cb54f6dd102?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80">
+</figure>
+
+<br><br><br>
+
+<!-- Image arrondie -->
+<!-- image = sur le parent figure -->
+<!-- is-rounded = sur l'image -->
+<figure class="image is-128x128">
+  <img class="is-rounded" src="https://images.unsplash.com/photo-1667337104773-6cb54f6dd102?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=80&q=80&h=80">
+</figure>
+
+<br><br><br>
+
+
+</div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../app.js"></script>
+</body>
+
+</html>

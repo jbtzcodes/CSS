@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Bulma</title>
+</head>
+
+<body >
+
+<div class="container">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+
+    <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+        alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+
+ 
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content">
+        <h1 class="title my-2">Layout</h1>
+        <a href="./5.1.Container.html"  class="button is-warning m-2">Container</a>
+        <a href="./5.2.Level.html" disabled class="button is-warning m-2">Level</a>
+        <a href="./5.3.Hero.html" class="button is-warning m-2">Hero</a>
+        <a href="./5.4.section et Footer.html" class="button is-warning m-2">Section et Footer</a>
+            <a href="./5.5.Médias.html" class="button is-warning m-2">Médias</a>
+        <a href="./5.6.Tiles.html" class="button is-warning m-2">Tiles</a>
+      </div>
+    </div>
+  </div>
+      <h6 class="title has-text-centered ">Level</h6>
+      <br><br>
+      <br><br>
+    <!--  #################### Début formation -->
+   
+  <!-- Level gauche et droite-->
+  <!--  level + is-mobile (pour quil reste au meme etat en mobile) -->
+  <!-- level-left ou level-right -->
+  <!-- level-item -->
+
+<nav class="level is-mobile">
+  <!-- Gauche -->
+  <div class="level-left">
+    <div class="level-item ">
+      <p class="subtitle is-5">
+        Item 1
+      </p>
+    </div>
+    <div class="level-item">
+      <p class="subtitle is-5">
+        Item 2
+      </p>
+    </div>
+  </div>
+
+  <!-- droite -->
+  <div class="level-right">
+    <p class="level-item">Item 3</p>
+    <p class="level-item">Item 4</p>
+    <p class="level-item">Item 5</p>
+    <p class="level-item">Item 6</p>
+    <p class="level-item">Item 7</p>
+  </div>
+</nav>
+  
+<br><br><br>
+<br><br><br>
+
+<!-- Level centrer -->
+<!-- level + is-mobile -->
+<!-- level-item + has-text-centered -->
+
+<nav class="level is-mobile">
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Hello</p>
+      <p class="title">Item</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Hello</p>
+      <p class="title">Item</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Hello</p>
+      <p class="title">Item</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Likes</p>
+      <p class="title">Item</p>
+    </div>
+  </div>
+</nav>
+
+  <script src="../app.js"></script>
+</body>
+
+</html>

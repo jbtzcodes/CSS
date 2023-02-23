@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Components</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.1.Badge et collections.html"
+        class="waves-effect waves-light btn   light-blue darken-4">Badges et collections</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.2.Boutons et breadcrumbs.html" 
+        class="waves-effect waves-light btn   light-blue darken-4">Boutons et breadcrumbs</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.3.Cartes.html" disabled
+        class="waves-effect waves-light btn   light-blue darken-4">Cartes</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.4.Icones et Footer.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Icones et footer</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.5.Navbar et pagination.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Navbar et pagination</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.6.Preloader.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Préloader</a></div>
+ 
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+
+  <div class="container">
+  <h5>Carte basique</h5>
+<!-- card = sur le container -->
+<!-- card-content = sur le container du contenu -->
+<!-- card-title = sur le titre -->
+<!-- card-action = pour le container à liens -->
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card red darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Titre</span>
+          <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Je suis un lien</a>
+          <a href="#">Je suis un lien</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <hr>
+
+  <h5>Carte avec image</h5>
+    <!-- card = sur le container -->
+    <!-- card-image = sur le container de l'image -->
+    <!-- card-content = sur le container du contenu -->
+    <!-- card-title = sur le titre -->
+    <!-- card-action = pour le container à liens -->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card red darken-1">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1661956601031-4cf09efadfce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <div class="card-content white-text">
+            <span class="card-title">Titre</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Je suis un lien</a>
+            <a href="#">Je suis un lien</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h5>Carte avec image et bouton d'action</h5>
+    <!-- card = sur le container -->
+    <!-- card-image = sur le container de l'image -->
+    <!-- card-content = sur le container du contenu -->
+    <!-- card-title = sur le titre -->
+    <!-- card-action = pour le container à liens -->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card red darken-1">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1661956601031-4cf09efadfce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content white-text">
+            <span class="card-title">Titre</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Je suis un lien</a>
+            <a href="#">Je suis un lien</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h5>Carte horizontal</h5>
+    <!-- card + horizontal = sur le container -->
+    <!-- card-stacked = sur le container du container -->
+    <!-- card-image = sur le container de l'image -->
+    <!-- card-content = sur le container du contenu -->
+    <!-- card-title = sur le titre -->
+    <!-- card-action = pour le container à liens -->
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card horizontal red darken-1">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1661956601031-4cf09efadfce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+          </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Je suis un lien</a>
+              </div>
+            </div>
+            </div>
+      </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <h5>Carte reveal</h5>
+    <!-- card = sur le container -->
+    <!-- card-image = sur le container de l'image -->
+    <!-- card-content = sur le container du contenu -->
+    <!-- card-title = sur le titre -->
+   <!-- card-reveal -->
+    <div class="row">
+      <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://images.unsplash.com/photo-1661956601031-4cf09efadfce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i
+              class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <br><br>
+    <hr>
+
+<h5>Petite carte sans image</h5>
+    <!-- card-panel -->
+    <div class="card-panel">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit itaque veritatis voluptas. Tempore laboriosam necessitatibus aperiam maiores inventore ratione debitis voluptate dignissimos perferendis recusandae explicabo aut dolore, hic facilis!</p>
+    </div>
+<br><br>
+<hr>
+
+  <h5>Taille carte</h5>
+ <!-- card + [small|medium|large] -->
+ <!-- small = 300px de hauteur max -->
+ <!-- medium = 400px de hauteur max -->
+ <!-- large = 500px de hauteur max -->
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card medium red darken-1">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1661956601031-4cf09efadfce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        </div>
+        <div class="card-content white-text">
+          <span class="card-title">Titre</span>
+          <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Je suis un lien</a>
+          <a href="#">Je suis un lien</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <hr>
+
+
+
+  </div>
+
+  
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

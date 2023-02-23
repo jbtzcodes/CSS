@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Components</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.1.Badge et collections.html"
+        class="waves-effect waves-light btn   light-blue darken-4" >Badges et collections</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.2.Boutons et breadcrumbs.html"
+             class="waves-effect waves-light btn   light-blue darken-4">Boutons et breadcrumbs</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.3.Cartes.html"
+        class="waves-effect waves-light btn   light-blue darken-4">Cartes</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.4.Icones et Footer.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Icones et footer</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.5.Navbar et pagination.html"
+      class="waves-effect waves-light btn   light-blue darken-4" disabled>Navbar et pagination</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.6.Preloader.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Préloader</a></div>
+ 
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+
+  <div class="container">
+  <h5>Navbar</h5>
+
+<!-- 1) Créer une nav avec un container à l'interieur qui aura la classe: nav-wrapper  -->
+<!-- 2) Pour un logo créer un lien avec la classe: brand-logo et left|right pour le faire flotter -->
+<!-- 3)Créer une liste avec la classe left|right pour le faire flotter -->
+<!-- active = pour l'indication de page -->
+<!-- navbar-fixed = sur un container global pour fixer la navbar -->
+<!-- <div class="navbar-fixed"> -->
+<nav>
+  <div class="nav-wrapper red">
+    <a href="#!" class="left brand-logo">LOGO</a>
+    <ul class="right">
+      <li>
+      <a href="#!">Lien</a>
+    </li>
+    <li class="active">
+      <a href="#!" >Lien</a>
+    </li>
+    <li>
+      <a href="#!">Lien</a>
+    </li>
+  </ul>
+</div>
+</nav>
+<!-- </div> -->
+
+<br><br>
+<hr>
+
+  <h5>Fil d'arianne</h5>
+<div class="nav-wrapper orange">
+  <a href="#!"class="breadcrumb">Item</a>
+  <a href="#!"class="breadcrumb">Item</a>
+  <a href="#!"class="breadcrumb">Item</a>
+</div>
+
+<br><br>
+<hr>
+<h5>Navbar responsive</h5>
+
+<nav>
+  <div class="nav-wrapper blue">
+    <a href="#!" class="brand-logo">LOGO</a>
+    <a href="#!" data-target="mobile-demo" class="sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
+
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#!">Lien</a></li>
+      <li><a href="#!">Lien</a></li>
+      <li><a href="#!">Lien</a></li>
+      <li><a href="#!">Lien</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="#!">Lien</a></li>
+  <li><a href="#!">Lien</a></li>
+  <li><a href="#!">Lien</a></li>
+  <li><a href="#!">Lien</a></li>
+</ul>
+
+<script>
+   
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('#mobile-demo');
+    var instances = M.Sidenav.init(elems);
+  });
+
+</script>
+<br><br><hr>
+
+<h5>Pagination</h5>
+<!-- pagination = sur la liste -->
+  <ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+
+
+  </div>
+
+  
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

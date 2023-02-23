@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>BOOTSTRAP</title>
+</head>
+
+<body>
+
+  <!-- ############################################ Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../src/flavicon.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ################# DEBUT DE LA FORMATION ################# -->
+
+  <h1 class="text-center text-dark mt-5">Dropdown et accordéon</h1>
+
+
+
+
+
+<!-- DROPDOWN  -->
+
+<!-- Le Dropdown est composé d'un container qui contient un bouton et une liste déroulante. -->
+<!-- [dropend] = s'ouvre vers la droite -->
+<!-- [dropstart] = s'ouvre vers la gauche -->
+
+<div class="container p-2 mt-2">
+  <div class="dropdown ">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Item 1</a></li>
+      <li><a class="dropdown-item" href="#">Item 2</a></li>
+      <li><a class="dropdown-item" href="#">Item 2</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!--  Accordeon -->
+
+<!-- Si on enlève l'attribut, data-bs-parent les panneaux restent ouverts -->
+
+<div class="container mt2">
+  <div class="accordion" id="accordionExample">
+
+    <div class="accordion-item">
+      <!-- button dans h2, étrange mais autorisé -->
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+
+        <div class="accordion-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi illo amet enim fuga minima, quasi minus
+          perferendis expedita magnam, illum deleniti deserunt? Fugiat nostrum aut porro, quam provident totam?
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi illo amet enim fuga minima, quasi minus
+          perferendis expedita magnam, illum deleniti deserunt? Fugiat nostrum aut porro, quam provident totam?
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion-item">
+
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi illo amet enim fuga minima, quasi minus
+          perferendis expedita magnam, illum deleniti deserunt? Fugiat nostrum aut porro, quam provident totam?
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Collapse -->
+
+<div class="container mt-2">
+  <p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+      aria-expanded="false" aria-controls="collapseExample">
+      Cliquer ici
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, repudiandae? Et, facere. Doloremque nisi suscipit
+      possimus tenetur aliquid non porro!
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <!--  footer -->
+
+  <footer class="bg-dark d-flex justify-content-center align-items-center flex-column px-2 mt-5">
+    <div class="footer-liens">
+      <img class="d-block m-auto mb-4" src="../src/flavicon.png" alt="">
+    </div>
+    <hr>
+    <p class="text-center text-white">&copy; - La minute de code design - 2022 - tout droits réservés</p>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- font-awesome -->
+
+  <title>Bulma</title>
+</head>
+
+<body style="padding: 0px 10px;">
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content ">
+        <h1 class="title is-2 my-2">Elements</h1>
+        <a href="./2.1.Box et boutons.html" class="button is-dark m-2 ">Box et boutons</a>
+        <a href="./2.2.Content et icones.html" disabled class="button is-dark m-2 ">Content et icones</a>
+    <a href="./2.3.Les images.html" class="button is-dark m-2 ">Les images</a>
+      <a href="./2.4.Notification et progressbar.html" class="button is-dark m-2 ">Notifications et progressbar</a>
+      <a href="./2.5.Table et tag.html" class="button is-dark m-2 ">Table et Tag</a>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+
+<br><br>
+    <h6 class="title has-text-centered ">Content</h6>
+    <br><br>
+    <!--  #################### Début formation -->
+   <!-- content = sur le parent -->
+
+<div class="content">
+  <h1>Content</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, atque debitis numquam assumenda quia dolores ipsam temporibus modi quae ipsa voluptas laborum? Ipsa at deserunt veniam, libero quaerat dolor ipsam eligendi sapiente illum. Laboriosam, excepturi autem! Reiciendis, quas enim ut recusandae asperiores id necessitatibus amet dolor laudantium. Delectus, eaque perspiciatis!</p>
+  <h2>Niveau 2</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam sint molestiae? Voluptatum sequi cum doloribus consequatur beatae earum excepturi magni doloremque quam, animi illo iste. Quos explicabo accusamus amet voluptatum voluptates dolor excepturi quae dolore veniam! Reiciendis cumque, architecto animi ea ab ipsum iure quisquam. Minima odit cupiditate iure?</p>
+  <ul>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+  </ul>
+  <h3>Niveau 3</h3>
+  <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac
+    tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+<ol>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+</ol>
+</div>
+
+
+<br><br>
+<h6 class="title has-text-centered ">icones</h6>
+<br><br>
+
+
+<!-- utiliser une icones -->
+<!-- icon-text = sur le parent -->
+<!--  icon = sur l'enfant -->
+<span class="icon-text  ">
+  <span class="icon ">
+    <ion-icon name="home-outline"></ion-icon>
+  </span>
+  <span>Home</span>
+</span>
+<br><br><br>
+<!-- Icones en couleurs -->
+<!-- icon-text + has-text-info|success|danger|warning|etc... = sur le parent -->
+<!--  icon + has-text-info|success|danger|warning|etc... = sur l'enfant -->
+<span class="icon-text  has-text-info">
+  <span class="icon ">
+    <ion-icon name="home-outline"></ion-icon>
+  </span>
+  <span>Home</span>
+</span>
+
+<br><br><br>
+<!-- Taille icones -->
+<!-- icon + is-small|medium|large -->
+
+<span class="icon-text  ">
+  <span class="icon is-large ">
+    <ion-icon name="home-outline"></ion-icon>
+  </span>
+  <span>Home</span>
+</span>
+
+<br><br><br>
+
+
+</div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Javascript</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.1.Carousel et slider.html"
+        class="waves-effect waves-light btn   light-blue green darken-4" disabled>Carousel et slider</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.2.Collapse et Dropdown.html"
+        class="waves-effect waves-light btn   light-blue green darken-4" >Collapse et dropdown</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.3.Modal et parallax.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4">Modal et parallax</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.4.ScrollSpy.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4">Scrollspy</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.5.Toast et tooltips.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4">Tost et Tooltip</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.6.Waves.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4">Waves</a></div>
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+
+  <div class="container">
+  <h5>Carousel</h5>
+<!-- carousel = sur le parent -->
+<!-- carousel-item sur les enfants -->
+<div class="row">
+  <div id="carousel-1" class="carousel col s12">
+    <a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+    <a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+    <a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+    <a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+    <a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+  </div>
+</div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('#carousel-1');
+        // On peut rajouter des propriétés comme duration, padding
+        var instances = M.Carousel.init(elems, { 
+          // gerer le temps u passage entre deux images
+          duration: 200,
+          // padding pour gerer la distance entre les images
+          padding: 100,
+          // dist pour gerer le zoom
+          dist: -100,
+          // gerer le nombre d'image visible
+          numVisible: 3,
+          indicators: true
+         });
+         
+        });
+      </script>
+
+<br><br><br>
+<hr>
+  <h5>2ème exemple</h5>
+
+
+<div id="carousel-2" class="carousel carousel-slider center">
+<a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+<a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+<a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+<a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+<a class="carousel-item"><img src="https://source.unsplash.com/random/600x500"></a>
+</div>
+
+
+<script>
+     document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('#carousel-2');
+  var instance = M.Carousel.init(elems,{
+      fullWidth: true,
+      indicators: true
+    });
+     })
+</script>
+<br><br><br>
+<hr>
+  <h5>3ème exemple</h5>
+
+
+<div id="carousel-3" class="carousel carousel-slider center">
+  <div class="carousel-fixed-item center">
+    <a class="btn waves-effect white grey-text darken-text-2">button</a>
+  </div>
+  <div class="carousel-item red white-text" href="#one!">
+    <h2>1</h2>
+    <p class="white-text">SLIDE 1</p>
+  </div>
+  <div class="carousel-item amber white-text" href="#two!">
+    <h2>2</h2>
+    <p class="white-text">Slide 2</p>
+  </div>
+  <div class="carousel-item green white-text" href="#three!">
+    <h2>3</h2>
+    <p class="white-text">Slide 3</p>
+  </div>
+  <div class="carousel-item blue white-text" href="#four!">
+    <h2>Fourth Panel</h2>
+    <p class="white-text">This is your fourth panel</p>
+  </div>
+</div>
+
+
+<script>
+     document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('#carousel-3');
+  var instance = M.Carousel.init(elems,{
+      fullWidth: true,
+      indicators: true
+    });
+     })
+</script>
+
+
+<hr>
+<br><br>
+
+
+<h5>Material box</h5>
+<!-- materialboxed = sur l'image -->
+<div class="container">
+  <img class=" materialboxed" src="https://source.unsplash.com/random/400x200">
+
+  <br><br>
+
+  <!-- Avec description -->
+  <!-- Rajouter attribut  data-caption="" -->
+  <img class="materialboxed" data-caption="Je suis une description" width="250"
+    src="https://source.unsplash.com/random/400x200">
+</div>
+
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+
+</script>
+
+<br><br>
+<hr>
+<h5>slider</h5>
+<div class="container">
+  <!-- slider = sur le container -->
+  <!-- slides = sur la liste -->
+  <!-- caption = sur la div du contenu -->
+  <!-- caption + [center|right|left]-align -->
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://source.unsplash.com/random/400x200"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Je suis un titre</h3>
+          <h5 class="light grey-text text-lighten-3">Je suis un slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/400x200"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Je suis un titre</h3>
+          <h5 class="light grey-text text-lighten-3">Je suis un slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/400x200"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Je suis un titre</h3>
+          <h5 class="light grey-text text-lighten-3">Je suis un slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/400x200"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Je suis un titre</h3>
+          <h5 class="light grey-text text-lighten-3">Je suis un slogan</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems);
+  });
+
+</script>
+
+
+
+  </div>
+
+  
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

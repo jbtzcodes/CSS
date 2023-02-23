@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">CSS</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./1.1.Typographies.html"
+        class="waves-effect waves-light btn  deep-purple darken-3 ">Typographies et couleurs</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./1.2.Couleurs.html"
+        class="waves-effect waves-light btn  deep-purple darken-3 " >Couleurs</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;"
+        href="./1.3.Grid.html"
+        class="waves-effect waves-light btn  deep-purple darken-3 " disabled>Grid</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;"
+        href="./1.4.Helpers.html"
+        class="waves-effect waves-light btn  deep-purple darken-3 ">Helpers</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;"
+        href="./1.5.Medias.html"
+        class="waves-effect waves-light btn  deep-purple darken-3 ">Médias</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;"
+        href="./1.6.Pulse et shadow.html" class="waves-effect waves-light btn  deep-purple darken-3 ">Pulse
+        et shadow</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./1.7.Tableaux et transitions.html"
+        class="waves-effect waves-light btn  deep-purple darken-3 ">Tableaux et transitions</a></div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+
+  <div class="container">
+  <h5>Créer une grille</h5>
+    <!-- 1) pour créer une grille il fautune <div class="container"> comme container -->
+    <!-- 2) À l'interieur il y aura une <div class="row">  -->
+    <!-- 3) Les enfants seront des <div class="col"> -->
+    <!-- 4) Materialize fonctionne avec une grille de 12 colonne. Pour gerer la taille des colonne on utilise la classe: [s|m|l][1|12]-->
+    <div class="row">
+      <div class="col  teal">Col.1</div>
+      <div class="col red">Col.2</div>
+      <div class="col  orange">Col.3</div>
+    </div>
+    <br>
+<hr>
+
+  <h5>Taille des colonnes</h5>
+  <!-- Taille des colonnes -->
+  <!-- Materialize fonctionne avec une grille de 12 colonne-->
+  <!-- col + [s|m|l|xl][1|12] -->
+    <div class="row">
+      <div class="col s12  teal">Col.1</div>
+      <div class="col s12 m6 l3 red">Col.2</div>
+    </div>
+    <br>
+<hr>
+    
+  <h5>Décalage</h5>
+ <!-- Décaller les colonnes -->
+ <!-- push-[s|m|l|xl][1|12] -->
+  <div class="row">
+    <div class="col s3 push-s5 teal">Col.1</div>
+    <div class="col s5 m6 l3 red">Col.2</div>
+    <div class="col s3 m6 l3 orange">Col.3</div>
+    <div class="col s5 m6 l3 purple">Col.4</div>
+  </div>
+  <br>
+<hr>
+
+ <!-- Etirer une colonne-->
+ <!-- pull-[s|m|l|xl][1|12] -->
+  <div class="row">
+    <div class="col s3 push-s5  teal">Col.1</div>
+    <div class="col s5 pull-s3 m6 l3 red">Col.2</div>
+    <div class="col s3 m6 l3 orange">Col.3</div>
+    <div class="col s5 m6 l3 purple">Col.4</div>
+  </div>
+  <br>
+  <hr>
+
+  <!-- Décaller tout d'un coup -->
+  <!-- offset-[s|m|l|xl][1|12] -->
+  <div class="row">
+    <div class="col s3 offset-s3 teal">Col.1</div>
+    <div class="col s5 m6 l3 red">Col.2</div>
+    <div class="col s3 m6 l3 orange">Col.3</div>
+    <div class="col s5 m6 l3 purple">Col.4</div>
+  </div>
+  <br>
+  <hr>
+
+
+    <h5>Cacher les éléments</h5>
+  <!-- Cacher des élément à partir d'une taille d'écran-->
+  <!-- hide = tout le temps cacher -->
+  <!-- hide-on-med-only = cacher au moyens écran -->
+  <!-- hide-on-med-and-down = cacher au dessous de moyens écran -->
+  <div class="row">
+    <div class="col s12 teal hide">Col.1</div>
+    <div class="col s12 red hide-on-med-only">Col.2</div>
+    <div class="col s12 orange hide-on-med-and-down">Col.3</div>
+  </div>
+  <br>
+  </div>
+
+  
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

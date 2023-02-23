@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Forms</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.1.Autocomplete et checkboxes.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4" disabled >Autocomplete et checkboxes</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.2.Chips et Pickers.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4" >Chips et pickers</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.3.Radio et Range.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4" >Radio et range</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.4.Select et switches.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4" >Select et switches</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.5.Text input.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4" >Text inputs</a></div>
+  
+
+ 
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+<div class="container">
+  <h5>Autocomplete</h5>
+  <!-- input avec  id="autocomplete-input" class="autocomplete" -->
+  <!-- label avec for="autocomplete-input" -->
+
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">textsms</i>
+          <input type="text" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Autocomplete</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // javascript
+     document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.autocomplete');
+        var instances = M.Autocomplete.init(elems);
+      });
+  </script>
+
+  <br><br><br>
+  <hr>
+  <h5>Checkboxes</h5>
+
+<form action="#">
+  <p>
+    <label>
+      <!-- 1) input type="checkbox" -->
+      <input type="checkbox" />
+      <span>Red</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <!-- 2) input avec type="checkbox" checked="checked" -->
+      <input type="checkbox" checked="checked" />
+      <span>Yellow</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <!-- 3)input type="checkbox" class="filled-in" checked="checked" -->
+      <input type="checkbox" class="filled-in" checked="checked" />
+      <span>Filled in</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <!-- 4) input avec   id="indeterminate-checkbox" type="checkbox" -->
+      <input id="indeterminate-checkbox" type="checkbox" />
+      <span>Indeterminate Style</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <!-- 5) Pour les désactiver -->
+      <!-- input avec  disabled="disabled" -->
+      <input type="checkbox" checked="checked" disabled="disabled" />
+      <span>Green</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <!-- 2eme exemple -->
+      <input type="checkbox" disabled="disabled" />
+      <span>Brown</span>
+    </label>
+  </p>
+</form>
+
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

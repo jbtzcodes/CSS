@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Forms</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.1.Autocomplete et checkboxes.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4">Autocomplete et checkboxes</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.2.Chips et Pickers.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4">Chips et pickers</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.3.Radio et Range.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4">Radio et range</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.4.Select et switches.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4" disabled>Select et switches</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.5.Text input.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4">Text inputs</a></div>
+ 
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+<div class="container">
+  <h5>Select</h5>
+  <br><br>
+
+<!-- select classique -->
+<!-- input-field -->
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choisissez une option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Classique</label>
+  </div>
+<br><br>
+
+<!-- select multiple -->
+<!-- input-field -->
+<div class="input-field col s12">
+  <!-- ajouter multiple à select -->
+  <select multiple>
+    <option value="" disabled selected>Choisissez une option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <label> Multiple</label>
+</div>
+
+<br><br>
+<!-- Groupe -->
+
+<div class="input-field col s12">
+  <select>
+    <optgroup label="team 1">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </optgroup>
+    <optgroup label="team 2">
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+    </optgroup>
+  </select>
+  <label>Groupes</label>
+</div>
+
+<br><br>
+<!-- Avec images -->
+
+  <div class="input-field col s12 m6">
+    <select class="icons">
+      <option value="" disabled selected>Choisissez une option</option>
+      <option value="" data-icon="https://source.unsplash.com/random/50x50" class="left">example 1</option>
+      <option value="" data-icon="https://source.unsplash.com/random/50x50" class="left">example 2</option>
+      <option value="" data-icon="https://source.unsplash.com/random/50x50" class="left">example 3</option>
+    </select>
+    <label>Images in select</label>
+  </div>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var elems = document.querySelectorAll('select');
+          var instances = M.FormSelect.init(elems);
+        });
+  </script>
+  
+
+  <br><br>
+  <hr>
+    <h5>Switches</h5>
+
+    <!-- Switch -->
+    <!-- switch = sur le container -->
+    <!-- lever sur le span -->
+    <div class="switch">
+      <label>
+        Off
+        <input type="checkbox">
+        <span class="lever"></span>
+        On
+      </label>
+    </div>
+    
+    <!-- Disabled Switch -->
+    <div class="switch">
+      <label>
+        Off
+        <input disabled type="checkbox">
+        <span class="lever"></span>
+        On
+      </label>
+    </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

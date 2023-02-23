@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>BOOTSTRAP</title>
+</head>
+
+<body>
+
+  <!-- ############################################ Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../src/flavicon.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ################# DEBUT DE LA FORMATION ################# -->
+
+  <h1 class="text-center text-danger mt-5">Les formulaires</h1>
+
+
+
+
+<!-- 
+  form-control = sur les inputs pour les styliser
+  form-control-sm|lg = pour  agrandir ou réduire les inputs
+  form-label = sur les label pour les styliser
+ -->
+
+<!-- 
+  disabled = pour désactiver un input 
+  readonly = pour enpecher la modification de valeur. Rajouter form-control-plaintext pour le styliser en format texte
+  -->
+
+
+<div class="container mt-1">
+  <form>
+    <div class="mb-3">
+      <label for="mail" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="mail" placeholder="votremail@domaine.fr">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+  </form>
+</div>
+
+<!--  Input file -->
+
+<!-- form-control = sur les inputs pour les styliser
+  form-control-sm|lg = pour agrandir ou réduire les inputs
+    disabled = pour désactiver un input
+    multiple = selectionne plusieurs fichiers -->
+
+
+<div class="container mt-1">
+  <form>
+    <div class="mb-3">
+      <label for="file" class="form-label">Fichier</label>
+      <input type="file" class="form-control" id="file">
+    </div>
+  </form>
+</div>
+<div class="container mt-1">
+  <form>
+    <div class="mb-3">
+      <label for="file2" class="form-label">Fichier</label>
+      <input type="file" multiple class=" form-control" id="file2">
+    </div>
+  </form>
+</div>
+<div class="container mt-1">
+  <form>
+    <div class="mb-3">
+      <label for="file3" class="form-label">Fichier</label>
+      <input type="file" class="form-control" id="file3">
+    </div>
+  </form>
+</div>
+
+
+<!-- Datalist -->
+<!-- 
+  form-control = sur les inputs
+  form-label = sur les labels
+ -->
+<div class="container mt-1">
+  <form>
+    <label for="datalist" class="form-label">La meilleure ville de l'été</label>
+    <input list="options" id="datalist" class="form-control" placeholder="Rechercher...">
+    <datalist id="option">
+      <option value="Paris">
+      <option value="Madrid">
+      <option value="Berlin">
+      <option value="Londres">
+    </datalist>
+  </form>
+</div>
+
+<!-- Input color -->
+<!-- 
+  form-control = sur les inputs
+  form-label = sur les labels
+  form-control-color = sur le input
+ -->
+<div class="container mt-1">
+  <form>
+    <div class="mb-3">
+      <label for="color" class="form-label">Choix de la couleur</label>
+      <input type="color" class="form-control form-control-color " id="color" title="Choissisez votre couleur">
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+  <!--  footer -->
+
+  <footer class="bg-dark d-flex justify-content-center align-items-center flex-column px-2 mt-5">
+    <div class="footer-liens">
+      <img class="d-block m-auto mb-4" src="../src/flavicon.png" alt="">
+    </div>
+    <hr>
+    <p class="text-center text-white">&copy; - La minute de code design - 2022 - tout droits réservés</p>
+  </footer>

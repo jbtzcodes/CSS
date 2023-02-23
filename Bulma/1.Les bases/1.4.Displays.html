@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Bulma</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content ">
+            <h1 class="title is-2 my-2">Les bases</h1>
+        <a href="./1.1.Typographies.html" class="button is-danger m-2 ">Typographies</a>
+        <a href="./1.2.Couleurs.html" class="button is-danger m-2 ">Les couleurs</a>
+        <a href="./1.3.Positionnements.html" class="button is-danger m-2 ">Positionnements</a>
+        <a href="./1.4.Displays.html" disabled class="button is-danger m-2 ">Display</a>
+        <a href="./1.5.Grid partie 1.html" class="button is-danger m-2 ">Grid partie 1</a>
+        <a href="./1.6.Grid partie 2.html" class="button is-danger m-2 ">Grid partie 2</a>
+      </div>
+    </div>
+  </div>
+
+<h6 class="title has-text-centered ">Display</h6>
+<br><br><br>
+<!--  #################### Début formation -->
+
+<div class="columns is-mobile is-centered">
+  <div class="column is-two-thirds">
+    <!-- block -->
+    <!-- is-block -->
+    <div class="is-block       has-background-warning">Display Block</div>
+    <br><br>
+    <!-- Inline -->
+    <!-- is-inline -->
+    <div class="is-inline         has-background-warning">Display Inline</div>
+    <br><br>
+    <!-- Inline-block-->
+    <!-- is-inline-block -->
+    <div class="is-inline-block   has-background-warning">Display Inline-block</div>
+    <br><br>
+    <!-- Flex -->
+    <!-- is-flex -->
+    <div class="is-flex">
+      <div>item</div>
+      <div>item</div>
+      <div>item</div>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="columns is-mobile is-centered">
+  <div class="column is-two-thirds">
+    <!-- Faire disparaitre des éléments avec les breackpoints -->
+    <!-- de 769px à 1023px -->
+    <!-- is-hidden-tablet-only    -->
+    <div class="is-hidden-tablet-only       has-background-warning">de 769px à 1023px</div>
+    <br><br>
+    <!-- de 1024px à 1215px -->
+    <!-- is-hidden-desktop-only -->
+    <div class="is-hidden-desktop-only       has-background-warning">de 1024px à 1215px</div>
+    <br><br>
+    <!-- de 1216px à 1407px -->
+    <!-- is-hidden-widescreen-only -->
+    <div class="is-hidden-widescreen-only           has-background-warning">de 1216px à 1407px</div>
+    <br><br>
+    <!-- Caché élément de 0 à 768px -->
+    <!-- is-hidden-mobile -->
+    <div class="is-hidden-mobile        has-background-warning">Cacher de 0 à 768px</div>
+  </div>
+</div>
+<br><br>
+<div class="columns is-mobile is-centered">
+  <div class="column is-two-thirds">
+    <!-- Displays responsives en fonction de l'écran -->
+    <!-- À partir de 769px -->
+    <!-- is-hidden-tablet    -->
+    <div class="is-hidden-tablet       has-background-success">À partir de 769px</div>
+    <br><br>
+    <!-- À partir de 1016px -->
+    <!-- is-hidden-desktop   -->
+    <div class="is-hidden-desktop          has-background-success">À partir de 1016px</div>
+    <br><br>
+    <!-- À partir de 1216px -->
+    <!-- is-hidden-widescreen -->
+    <div class="is-hidden-widescreen         has-background-success">À partir de 1216px</div>
+    <br><br>
+    <!-- À partir de 1408px -->
+    <!-- is-hidden-fullhd -->
+    <div class="is-hidden-fullhd         has-background-success">À partir de 1408px</div>
+    <br><br>
+    <!-- Caché élément de 0 à 1023px -->
+    <!-- is-hidden-touch -->
+    <div class="is-hidden-touch        has-background-success">Cacher de 0 à 1023px</div>
+  </div>
+</div>
+
+
+
+
+  <script src="../app.js"></script>
+</body>
+
+</html>

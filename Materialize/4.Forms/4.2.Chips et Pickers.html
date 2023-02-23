@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Forms</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.1.Autocomplete et checkboxes.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4">Autocomplete et checkboxes</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.2.Chips et Pickers.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4" disabled >Chips et pickers</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.3.Radio et Range.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4">Radio et range</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.4.Select et switches.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4">Select et switches</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./4.5.Text input.html"
+        class="waves-effect waves-light btn   light-blue yellow darken-4">Text inputs</a></div>
+
+ 
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+<div class="container">
+  <h5>Chips</h5>
+<!-- chip = sur le container -->
+  <div class="chip">
+    <img src="https://source.unsplash.com/random/50x50" alt="Contact Person">
+    Jane Doe
+  </div>
+
+
+  <!-- avec bouton -->
+
+    <div class="chip">
+      Chip
+      <i class="close material-icons">close</i>
+    </div>
+
+  <br><br>
+  <!-- avec Javascript -->
+  <!-- 1) div avec la classe chips -->
+<!-- 2) div avec les classes chips chips-initial -->
+<!-- 3) div avec les classes chips chips-placeholder -->
+<!-- 4) div avec les classes chips chips-autocomplete -->
+  <div class="chips"></div>
+  <div class="chips chips-initial"></div>
+  <div class="chips chips-placeholder"></div>
+  <div class="chips chips-autocomplete"></div>
+  
+  <!-- Input stylisable -->
+  <!-- chips = sur le container -->
+  <!-- custome-class = sur l'enfant -->
+  <div class="chips">
+    <input class="custom-class">
+  </div>
+
+
+  
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.chips');
+        var instances = M.Chips.init(elems);
+      });
+</script>
+
+
+
+<br><br>
+<hr>
+<h5>Pickers (Calendrier)</h5>
+<!-- input avec classe datepicker -->
+<input type="text" class="datepicker">
+
+
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.datepicker');
+      var instances = M.Datepicker.init(elems);
+    });
+</script>
+
+
+</div>
+
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

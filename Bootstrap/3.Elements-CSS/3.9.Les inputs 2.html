@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>BOOTSTRAP</title>
+</head>
+
+<body>
+
+  <!-- ############################################ Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../src/flavicon.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ################# DEBUT DE LA FORMATION ################# -->
+
+  <h1 class="text-center text-danger mt-5">Les inputs part.2</h1>
+
+
+  
+<!--  checkbox -->
+
+<!-- 
+  form-check = sur le parent
+  form-check-input = sur les inputs 
+  form-check-label = sur les labels
+  disabled = pour désactiver une case
+ -->
+
+<div class="container mb-2">
+  <form action="">
+    <div class="form-check">
+      <input id="checkbox" type="checkbox" class="form-check-input">
+      <label for="check" class="form-check-label">Case 1 </label>
+    </div>
+  </form>
+  <form action="">
+    <div class="form-check">
+      <input id="checkbox" type="checkbox" class="form-check-input">
+      <label for="check" class="form-check-label">Case 2 </label>
+    </div>
+  </form>
+
+
+  <!-- Bouton radio en ligne -->
+
+
+  <!-- Bouton radio en ligne -->
+  <!-- Idem que pour checkbox + rajouter 
+form-check-inline = piour les mettre en ligne
+-->
+
+  <div class="container mb-2">
+    <form action="">
+      <div class="form-check form-check-inline">
+        <input id="checkbox" type="checkbox" class="form-check-input">
+        <label for="check" class="form-check-label"> 1 </label>
+      </div>
+      <div class="form-check  form-check-inline">
+        <input id="checkbox" type="checkbox" class="form-check-input">
+        <label for="check" class="form-check-label"> 2 </label>
+      </div>
+      <div class="form-check  form-check-inline">
+        <input id="checkbox" type="checkbox" class="form-check-input">
+        <label for="check" class="form-check-label"> 3 </label>
+      </div>
+
+      <!-- switch -->
+      <!-- 
+          form-check + form-switch = sur le parent
+          form-check-input = sur les inputs 
+          form-check-label = sur les labels
+          disabled = pour désactiver une case
+         -->
+
+
+      <div class="container mb-2">
+        <form action="">
+          <div class="form-check form-switch">
+            <input id="checkbox" type="checkbox" class="form-check-input">
+            <label for="check" class="form-check-label">Case 1 </label>
+          </div>
+        </form>
+        <form action="">
+          <div class="form-check form-switch">
+            <input id="checkbox" type="checkbox" class="form-check-input">
+            <label for="check" class="form-check-label">Case 2 </label>
+          </div>
+        </form>
+      </div>
+
+      <!-- Selectbox -->
+
+      <!-- 
+        form-select = sur le select 
+        form-select-sm|md|lg|xl|xxl = pour la taille
+        multiple = selectionner plusieur éléments 
+        disabled = desactive un élément
+        
+             -->
+
+      <div class="container mb-2">
+        <select name="villes" id="villes" multiple class="form-select">
+          <option selected>Choisissez votre ville</option>
+          <option value="paris">Paris</option>
+          <option value="paris">Madrid</option>
+          <option value="paris">Londres</option>
+        </select>
+      </div>
+
+      <!-- Barre range -->
+
+      <!-- 
+  form-range = sur l'input
+  Nous pouvons utiliser min + max et / ou step
+ -->
+
+
+      <div class="container mb-2">
+        <label for="range" class="form-label">Ma barre</label>
+        <input type="range" id="range" min="0" max="100" class="form-range">
+      </div>
+
+
+
+
+      <!-- Validation d'un input -->
+
+      <!-- 1) rajoute le script à la fin  -->
+      <!-- 2) le formulaire doit avoir la classe : needs-validation + l'attribut novalidate
+ 3)Rajouter required à l'input
+ 4) Creer deux balises sous l'input :
+- une avec la class  : valid-feedback
+- une autre avec la class  : invalid-feedback -->
+
+      <div class="container">
+        <form action="" class="needs-validation" novalidate>
+          <label for="nom" class="form-label">Nom:</label>
+          <input type="text" class="form-control" id=" nom" required>
+          <div class="valid-feedback">Tout est ok</div>
+          <div class="invalid-feedback">Il y a eu une erreur</div>
+          <button class="btn btn-danger" type="submit">Envoyer</button>
+        </form>
+      </div>
+
+      <!-- Validation avec required -->
+      <div class="container">
+        <form>
+          <label for="nom2" class="form-label">Nom:</label>
+          <input type="text" class="form-control" id=" nom2" required>
+            <div class="valid-feedback">Tout est ok</div>
+            <div class="invalid-feedback">Il y a eu une erreur</div>
+          <button class="btn btn-danger" type="submit">Envoyer</button>
+        </form>
+      </div>
+
+
+
+      <!-- validation avec Tooltip -->
+      <!-- Mettre script en commentaire -->
+      <!--  pareille que le premier exemple sauf remplacer valid-feedback par valid-tooltip et invalid-feedback par invalid-tooltip -->
+      <div class="container">
+        <form action="" class="needs-validation" novalidate>
+          <label for="nom3" class="form-label">Nom:</label>
+          <input type="text" class="form-control" id="nom3" required>
+          <div class="valid-tooltip">Tout est ok</div>
+          <div class="invalid-tooltip">Il y a eu une erreur</div>
+          <button class="btn btn-danger" type="submit">Envoyer</button>
+        </form>
+      </div>
+
+
+
+
+
+
+
+      <script>
+
+        (function () {
+
+          var forms = document.querySelectorAll('.needs-validation')
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+
+      </script>
+
+
+
+
+  <!--  footer -->
+
+  <footer class="bg-dark d-flex justify-content-center align-items-center flex-column px-2 mt-5">
+    <div class="footer-liens">
+      <img class="d-block m-auto mb-4" src="../src/flavicon.png" alt="">
+    </div>
+    <hr>
+    <p class="text-center text-white">&copy; - La minute de code design - 2022 - tout droits réservés</p>
+  </footer>
+
+  </body>
+  
+  </html>

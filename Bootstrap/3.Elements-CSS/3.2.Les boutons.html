@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>BOOTSTRAP</title>
+</head>
+
+<body>
+
+  <!-- ############################################ Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../src/flavicon.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ################# DEBUT DE LA FORMATION ################# -->
+
+  <h1 class="text-center text-danger mt-5">Les boutons</h1>
+
+  <!-- Bouton -->
+  <div class="container pt-3">
+    <!-- btn = créer un bouton 
+    btn-primary|success|danger etc.. = pour donner la couleur au bouton -->
+    <button class="btn btn-primary">Bouton 1</button>
+    <button class="btn btn-success">Bouton 2</button>
+    <button class="btn btn-warning">Bouton 3</button>
+    <button class="btn btn-dark">Bouton 4</button>
+   
+  </div>
+  
+  
+  
+  
+  <!-- Bouton avec bordure -->
+  <div class="container pt-3">
+    <button class="btn btn-outline-primary ">Bouton 1</button>
+    <button class="btn btn-outline-danger ">Bouton 2</button>
+    <button class="btn  btn-outline-warning">Bouton 3</button>
+    <button class="btn  btn-outline-info">Bouton 4</button>
+  </div>
+  
+  <!-- Largeur des boutons -->
+  
+  <div class="container pt-3">
+    <button class="btn btn-primary btn-lg">Bouton 1</button>
+    <button class="btn btn-danger btn-sm ">Bouton 2</button>
+    <!-- disabled desactive le bouton -->
+    <button class="btn btn-success" disabled>Bouton 3</button>
+  </div>
+  
+  
+  <!-- Badge dans un bouton -->
+  
+  <div class="container pt-3">
+    <button class="btn btn-primary badge">Bouton 1</button>
+  </div>
+  
+  <!-- Badge avec bouton (Ce m'est dans le bouton directement) -->
+  
+  <div class="container mt-2 mb-2">
+    <button class="btn btn-danger">
+      Panier <span class="bg-warning badge">2</span>
+    </button>
+  </div>
+  
+  <!-- Badge notification -->
+  
+  <div class="container mt-4 mb-2">
+    <button class="btn btn-warning position-relative">
+      Panier <span class="position-absolute top-0 start-100 translate-middle bg-danger text-white rounded">99+
+        <span class="visually-hidden">articles</span>
+      </span>
+    </button>
+  </div>
+  
+  
+  <!-- petits badges -->
+  
+  <div class="container mt-2 mb-2">
+    <span class="badge bg-danger">Badge</span>
+  </div>
+  
+  <!-- badge pillule -->
+  
+  <div class="container mt-2 mb-2">
+    <span class="badge bg-danger rounded-pill ">Badge</span>
+  </div>
+  
+  
+  <!-- Bouton de fermeture -->
+  
+  <div class="container mt-2 mb-2">
+    <button class="bg-warning p-3 btn-close"></button>
+  </div>
+  
+  
+  <!-- Groupe de boutons = grouper les boutons -->
+  
+  <div class="container">
+    <div class="btn-group">
+      <button class="btn btn-primary">Bouton 1</button>
+      <button class="btn btn-danger">Bouton 2</button>
+      <button class="btn btn-success">Bouton 3</button>
+  
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!--  footer -->
+
+  <footer class="bg-dark d-flex justify-content-center align-items-center flex-column px-2 mt-5">
+    <div class="footer-liens">
+      <img class="d-block m-auto mb-4" src="../src/flavicon.png" alt="">
+    </div>
+    <hr>
+    <p class="text-center text-white">&copy; - La minute de code design - 2022 - tout droits réservés</p>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

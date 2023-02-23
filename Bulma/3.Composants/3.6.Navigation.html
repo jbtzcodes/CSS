@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
+  <!-- font-awesome -->
+
+  <title>Bulma</title>
+</head>
+
+<body style="padding: 0px 10px;">
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content ">
+        <h1 class="title is-2 my-2">Composants</h1>
+        <a href="./3.1.Breadcrumb.html"  class="button is-success m-2 ">Breadcrumb</a>
+        <a href="./3.2.Carte.html"  class="button is-success m-2 ">Carte</a>
+        <a href="./3.3.Dropdown et menu.html" class="button is-success m-2 ">Dropdown et Menu</a>
+        <a href="./3.4.Message.html" class="button is-success m-2 ">Message</a>
+        <a href="./3.5.Modal.html"  class="button is-success m-2 ">Modal</a>
+              <a href="./3.6.Navigation.html" disabled  class="button is-success m-2 ">Navigation</a>
+              <a href="./3.7.Pagination.html" class="button is-success m-2 ">Pagination</a>
+              <a href="./3.8.Panel et Tabs.html" class="button is-success m-2 ">Panel et tabs</a>
+       
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <!--  #################### Début formation -->
+<br><br>
+    <h6 class="title has-text-centered ">Navigation</h6>
+    <br><br>
+
+
+    <!-- navbar = sur le parent + is-fixed-top|fixed-bottom pour le fixer -->
+    <!-- Pour que le padding s'adapte bien ajouter  "has-navbar-fixed-top" à l'HTML ou au BODY  -->
+
+
+    <!-- Pour integrer un logo dans la navbar -->
+<!--  navbar-brand = sur le container du logo - -->
+<!--  navbar-item = sur le lien du logo -->
+
+
+<!-- Pour le bouton burger -->
+<!--  Créer un a avec la classe "navbar-burger", l'attribut role="button" et l'attribut aria-label="menu" -->
+<!-- À l'interieur créer des 3 <span aria-hidden="true"></span> -->
+
+<!-- créer une div <div id="navbarBasicExample" class="navbar-menu"> -->
+  <!-- navbar-start = sur le container du contenu -->
+  <!-- navbar-item = sur les liens -->
+  <!-- navbar-end = sur le container du contenu de fin -->
+  <!-- navbar-link = sur un lien pour crée des sous categories -->
+
+
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="../src/flavicon.png" width="20">
+    </a>
+
+    <a role="button" id="icone" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navmenu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+      <a class="navbar-item">
+        À propos
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Portfolio
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            CSS
+          </a>
+          <a class="navbar-item">
+            HTML
+          </a>
+          <a class="navbar-item">
+            JS
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Voir plus
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-danger">
+            Connexion
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+var menu = document.getElementById('navmenu');
+var icone = document.getElementById('icone');
+
+icone.addEventListener('click', ()=> {
+  icone.classList.toggle('is-active');
+  menu.classList.toggle('is-active');
+})
+</script>
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../app.js"></script>
+</body>
+
+</html>

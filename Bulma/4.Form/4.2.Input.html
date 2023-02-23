@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
+  <!-- font-awesome -->
+
+  <title>Bulma</title>
+</head>
+
+<body style="padding: 0px 10px;">
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="../src/flavicon.png">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar">
+        <a href="../index.html" class="navbar-item"> Home</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content ">
+        <h1 class="title is-2 my-2">form</h1>
+        <a href="./4.1.Général.html"  class="button is-primary m-2 ">Global</a>
+        <a href="./4.2.Input.html" disabled  class="button is-primary m-2 ">Input</a>
+        <a href="./4.3.Textarea.html" class="button is-primary m-2 ">Textarea</a>
+        <a href="./4.4.Select et checkbox.html" class="button is-primary m-2 ">Select et checkbox</a>
+        <a href="./4.5.Radio et file.html" class="button is-primary m-2 ">Radio et file</a>
+       
+       
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+<!--  #################### Début formation -->
+<br><br>
+    <h6 class="title has-text-centered ">Input </h6>
+    <br><br>
+
+    <!-- créer un input -->
+<input class="input" type="text" placeholder="Text input">
+<br><br><br>
+<!-- couleur -->
+<!-- input + is-primary|success|warning|danger|etc... -->
+<input class="input is-primary" type="text" placeholder="Primary input">
+<br><br>
+<!-- Taille -->
+<!-- input + is-small|medium|large -->
+<input class="input is-medium" type="text" placeholder="Medium input">
+<br><br>
+<!-- input arrondi -->
+<!-- input + is-rounded -->
+<input class="input is-rounded" type="text" placeholder="Rounded input">
+<br><br>
+<!-- gerer l'etat -->
+<!-- HOVER: is-hovered -->
+<div class="control">
+  <input class="input is-hovered" type="text" placeholder="Hovered input">
+</div>
+<br><br>
+<!-- FOCUS: is-focused-->
+<div class="control">
+  <input class="input is-focused" type="text" placeholder="Focused input">
+</div>
+<br><br>
+<!-- LOAD: is-loading -->
+<div class="control is-loading">
+  <input class="input" type="text" placeholder="Loading input">
+</div>
+<br><br>
+<!-- avec des icones -->
+<div class="field">
+  <p class="control has-icons-left has-icons-right">
+    <input class="input" type="email" placeholder="Email">
+    <span class="icon is-small is-left">
+      <ion-icon name="mail-open-outline"></ion-icon>
+    </span>
+    <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+  </p>
+</div>
+<div class="field">
+  <p class="control has-icons-left">
+    <input class="input" type="password" placeholder="Password">
+    <span class="icon is-small is-left">
+      <ion-icon name="key-outline"></ion-icon>
+    </span>
+  </p>
+</div>
+<!-- désactiver -->
+<!-- disabled pour le désactiver -->
+<div class="control">
+  <input class="input" type="text" placeholder="Disabled input" disabled>
+</div>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../app.js"></script>
+</body>
+
+</html>

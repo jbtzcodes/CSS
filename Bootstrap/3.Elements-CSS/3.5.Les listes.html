@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>BOOTSTRAP</title>
+</head>
+
+<body>
+
+  <!-- ############################################ Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../src/flavicon.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ################# DEBUT DE LA FORMATION ################# -->
+
+  <h1 class="text-center text-danger mt-5">Les listes</h1>
+
+<!-- Créer des listes -->
+
+<!-- 
+      list-group = sur le parent 
+      list-group-item = sur les enfants 
+      active = pour surligner un élément enfant 
+      disabled = pour désactiver un élément
+      list-group-numbered = sur le parent (numerote les LI)
+      list-groupe-item-success|danger|warning|info|....
+     -->
+
+<div class="container mb-3">
+  <ul class="list-group list-group-numbered">
+    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+    <li class="list-group-item  active">Lorem ipsum dolor sit amet.</li>
+    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+    <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+  </ul>
+
+</div>
+
+<!-- Créer une liste de cases à cocher -->
+
+<!-- list-group = sur le parent
+list-group-item = sur les enfants
+form-check-input = sur les inputs -->
+
+<div class="container mb-3">
+  <div class="list-group">
+    <label class="list-group-item">
+      <input type="checkbox" class="form-check-input">
+      Case1
+    </label>
+    <label class="list-group-item">
+      <input type="checkbox" class="form-check-input">
+      Case2
+    </label>
+    <label class="list-group-item">
+      <input type="checkbox" class="form-check-input">
+      Case3
+    </label>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+  <!--  footer -->
+
+  <footer class="bg-dark d-flex justify-content-center align-items-center flex-column px-2 mt-5">
+    <div class="footer-liens">
+      <img class="d-block m-auto mb-4" src="../src/flavicon.png" alt="">
+    </div>
+    <hr>
+    <p class="text-center text-white">&copy; - La minute de code design - 2022 - tout droits réservés</p>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

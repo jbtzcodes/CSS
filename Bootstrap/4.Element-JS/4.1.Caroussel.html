@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>BOOTSTRAP</title>
+</head>
+
+<body>
+
+  <!-- ############################################ Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../src/flavicon.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ################# DEBUT DE LA FORMATION ################# -->
+
+  <h1 class="text-center text-dark mt-5">Caroussel</h1>
+
+<!-- Infos à savoir -->
+<!-- 1) importer le bundle js
+    2) Une des images doit au moins avoir l'attribut active
+    3) Ajouter data-bs-ride pour initialiser le carousel au chargement de votre page 
+    4) Par défault le slider va slider toutes les 3 segondes 
+    5) Ajouter au mouseenter > data-bs-pause="false"
+    6) Il est possible de changer l'attribut data-bs-interval='1000' en millisegonde. -->
+
+
+<!-- Structure carousel -->
+<!-- 
+      carousel-slider = sur le parent
+      carousel-inner = sur le container à slides 
+      carousel-item = pour les slide
+      d-block + w100 = sur les images
+    -->
+
+
+<div class="container mb-2">
+  <div class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel" id="ex1">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../src/img.jpg" alt="" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="../src/img.jpg" alt="" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="../src/img.jpg" alt="" class="d-block w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Carousel avec indicateurs -->
+
+<!-- Carousel avec indicateurs -->
+<div class="container">
+  <div data-bs-interval="2000" data-bs-ride="carousel" id="ex1" class="carousel slide">
+
+
+    <div class="carousel-indicators">
+      <button class="active" data-bs-target="carousel2" data-bs-slide-to="0" aria-current="true" aria-label="slide 1"></button>
+      <button class="active" data-bs-target="carousel2" data-bs-slide-to="1" aria-current="true" aria-label="slide 2"></button>
+      <button class="active" data-bs-target="carousel2" data-bs-slide-to="2" aria-current="true" aria-label="slide 3"></button>
+    </div>
+
+
+
+
+
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../src/img.jpg" alt="" class="d-blok w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="../src/img.jpg" alt="" class="d-blok w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="../src/img.jpg" alt="" class="d-blok w-100">
+      </div>
+
+
+      <!-- Boutons de contrôle -->
+
+      <button class="carousel-control-prev" type="button" data-bs-target="carousel2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visially-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="carousel2" data-bs-slide="next">
+        <span class="visially-hidden">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+  
+
+  <!--  footer -->
+
+  <footer class="bg-dark d-flex justify-content-center align-items-center flex-column px-2 mt-5">
+    <div class="footer-liens">
+      <img class="d-block m-auto mb-4" src="../src/flavicon.png" alt="">
+    </div>
+    <hr>
+    <p class="text-center text-white">&copy; - La minute de code design - 2022 - tout droits réservés</p>
+  </footer>
+
+
+
+
+
+  <!--  Bundle JS Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

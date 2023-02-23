@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Components</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.1.Badge et collections.html"
+        class="waves-effect waves-light btn   light-blue darken-4">Badges et collections</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.2.Boutons et breadcrumbs.html" disabled
+        class="waves-effect waves-light btn   light-blue darken-4">Boutons et breadcrumbs</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.3.Cartes.html"
+              class="waves-effect waves-light btn   light-blue darken-4">Cartes</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.4.Icones et Footer.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Icones et footer</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.5.Navbar et pagination.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Navbar et pagination</a></div>
+  <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./2.6.Preloader.html"
+      class="waves-effect waves-light btn   light-blue darken-4">Préloader</a></div>
+ 
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+
+  <div class="container">
+  <h5>Boutons</h5>
+<!-- Créer un bouton -->
+<!-- btn -->
+<a class="btn">button</a>
+
+
+<!-- effets -->
+<!-- waves-effect waves-[color] btn -->
+<a class="waves-effect waves-red btn">button</a>
+
+<!-- avec un icone -->
+<a class=" btn"><i class="material-icons left">cloud</i>button</a>
+
+
+<!-- bouton flotant -->
+<!-- btn-floating -->
+<a class="btn-floating red"><i class="material-icons">add</i></a>
+
+<!-- Bouton flat -->
+<!-- waves-effect + waves-[color] + btn-flat -->
+  <a class="waves-effect waves-teal btn-flat">Button</a>
+
+  <br><br>
+<!-- taille du bouton -->
+<!-- btn-[small|Large] -->
+<a class="waves-effect waves-light btn-large">Button</a>
+
+
+<!-- Bouton submit -->
+<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+  <i class="material-icons right">send</i>
+</button>
+
+<!-- Désactiver le bouton -->
+<!-- disabled -->
+<a class="btn-large disabled">Button</a>
+
+<br><br>
+
+
+<!-- boutons fix -->
+<!-- fixed-action-btn = sur le container -->
+<!-- btn-floating = sur les liens -->
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">mode_edit</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+  </ul>
+</div>
+
+<script>
+  // Hover
+  // document.addEventListener('DOMContentLoaded', function () {
+  //       var elems = document.querySelectorAll('.fixed-action-btn');
+  //       var instances = M.FloatingActionButton.init(elems, {
+  //         direction: 'left'
+  //       });
+  //     });
+
+//  Click
+//  document.addEventListener('DOMContentLoaded', function () {
+//     var elems = document.querySelectorAll('.fixed-action-btn');
+//     var instances = M.FloatingActionButton.init(elems, {
+//       direction: 'left',
+//       hoverEnabled: false
+//     });
+//   });
+  
+// Toolbar
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   var elems = document.querySelectorAll('.fixed-action-btn');
+  //   var instances = M.FloatingActionButton.init(elems, {
+  //     toolbarEnabled: true
+  //   });
+  // });
+
+  // // Or with jQuery
+
+  // $('.fixed-action-btn').floatingActionButton({
+  //   toolbarEnabled: true
+  // });
+</script>
+
+<br><br><br>
+
+<hr>
+
+<h5>Breadcrumbs</h5>
+<!-- breadcrumb = sur les liens -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="#!" class="breadcrumb">home</a>
+        <a href="#!" class="breadcrumb">portfolio</a>
+        <a href="#!" class="breadcrumb">project</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  </div>
+
+  
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

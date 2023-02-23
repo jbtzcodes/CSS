@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Bulma</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="../src/flavicon.png">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar">
+          <a href="../index.html" class="navbar-item"> Home</a>
+        </div>
+      </div>
+  </div>
+  </nav>
+
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+
+
+  <div class="columns">
+    <div class="column card m-2 has-text-centered">
+      <div class="card-content">
+        <h1 class="title my-2">Layout</h1>
+        <a href="./5.1.Container.html"  class="button is-warning m-2">Container</a>
+        <a href="./5.2.Level.html" class="button is-warning m-2">Level</a>
+        <a href="./5.3.Hero.html" disabled class="button is-warning m-2">Hero</a>
+        <a href="./5.4.section et Footer.html" class="button is-warning m-2">Section et Footer</a>
+            <a href="./5.5.Médias.html" class="button is-warning m-2">Médias</a>
+        <a href="./5.6.Tiles.html" class="button is-warning m-2">Tiles</a>
+      </div>
+    </div>
+  </div>
+
+  <!--  #################### Début formation -->
+  <h6 class="title has-text-centered ">Hero</h6>
+  </div>
+
+
+  <!-- Créer un hero -->
+  <!-- Hero = sur le parent -->
+  <!-- Hero-body = sur le container -->
+  <!-- Title = pour le titre -->
+  <!-- subtitle = pour sous-titre -->
+<section class="hero is-warning">
+  <div class="hero-body">
+    <p class="title">
+      Titre
+    </p>
+    <p class="subtitle">
+      Sous-titre
+    </p>
+  </div>
+</section>
+
+<br><br><br><br>
+<!-- Gerer la taille du hero -->
+<!-- hero + is-small|medium|large|halfheight|fullheight -->
+<section class="hero is-small is-warning">
+  <div class="hero-body">
+    <p class="title">
+      Titre
+    </p>
+    <p class="subtitle">
+      Sous-titre
+    </p>
+  </div>
+</section>
+
+<br><br>
+
+
+
+<!-- Home avec hero -->
+
+<section class="hero is-danger is-large">
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            BULMA
+          </a>
+          <span class="navbar-burger" data-target="navbarMenuHeroB">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroB" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
+              Home
+            </a>
+            <a class="navbar-item">
+              Page 1
+            </a>
+            <a class="navbar-item">
+              Page 2
+            </a>
+            <span class="navbar-item">
+              <a class="button is-info is-inverted">
+            
+                <span>Contact</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">
+        Title
+      </p>
+      <p class="subtitle">
+        Subtitle
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
+      <div class="container">
+        <ul>
+          <li class="is-active">
+            <a>ITEM</a>
+          </li>
+          <li>
+            <a>ITEM</a>
+          </li>
+          <li>
+            <a>ITEM</a>
+          </li>
+          <li>
+            <a>ITEM</a>
+          </li>
+          <li>
+            <a>ITEM</a>
+          </li>
+          <li>
+            <a>ITEM</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+
+
+
+
+
+
+  <script src="../app.js"></script>
+</body>
+
+</html>

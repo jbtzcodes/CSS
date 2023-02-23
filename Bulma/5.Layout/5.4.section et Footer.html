@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Bulma</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="../src/flavicon.png">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar">
+          <a href="../index.html" class="navbar-item"> Home</a>
+        </div>
+      </div>
+  </div>
+  </nav>
+
+
+  <h1 class="has-text-centered my-5"><img src="https://bulma.io/images/bulma-logo.png"
+      alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="224" height="56"></h1>
+
+
+
+<div class="columns">
+  <div class="column card m-2 has-text-centered">
+    <div class="card-content">
+      <h1 class="title my-2">Layout</h1>
+      <a href="./5.1.Container.html" class="button is-warning m-2">Container</a>
+      <a href="./5.2.Level.html" class="button is-warning m-2">Level</a>
+      <a href="./5.3.Hero.html" class="button is-warning m-2">Hero</a>
+      <a href="./5.4.section et Footer.html" disabled class="button is-warning m-2">Section et Footer</a>
+          <a href="./5.5.Médias.html" class="button is-warning m-2">Médias</a>
+      <a href="./5.6.Tiles.html" class="button is-warning m-2">Tiles</a>
+    </div>
+  </div>
+</div>
+
+  <!--  #################### Début formation -->
+
+  </div>
+
+
+<h6 class="title has-text-centered ">Section </h6>
+<!-- section = sur le container -->
+<section class="section has-background-warning">
+  <h1 class="title">Section</h1>
+  <h2 class="subtitle">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, officiis!
+  </h2>
+</section>
+<br><br>
+<!-- Gérer la taille des sections -->
+<!--  section + is-medium|large -->
+<section class="section is-large has-background-warning">
+  <h1 class="title">Section</h1>
+  <h2 class="subtitle">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, officiis!
+  </h2>
+</section>
+
+<br><br><br>
+<h6 class="title has-text-centered "> Footer</h6>
+<br><br>
+<!-- footer = sur la balise footer -->
+<!-- content = sur le container à contenu -->
+<footer class="footer has-background-warning">
+  <div class="content has-text-centered">
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, aliquam?
+    </p>
+  </div>
+</footer>
+
+
+  <script src="../app.js"></script>
+</body>
+
+</html>

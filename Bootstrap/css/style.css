@@ -1,0 +1,20 @@
+nav img {
+  width: 40px;
+}
+
+footer {
+  height: 300px;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+}
+
+footer hr {
+  border: none;
+  width: 90%;
+  height: 1px;
+  background: #ffa600;
+  margin: 1rem 0;
+}

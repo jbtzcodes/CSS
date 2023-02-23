@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- google icones -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Materialize</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo">MENU</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<br><br>
+
+<h1 class="center-align">Javascript</h1>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.1.Carousel et slider.html"
+        class="waves-effect waves-light btn   light-blue green darken-4" >Carousel et slider</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.2.Collapse et Dropdown.html" disabled
+        class="waves-effect waves-light btn   light-blue green darken-4" disabled>Collapse et dropdown</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.3.Modal et parallax.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4">Modal et parallax</a></div>
+    <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.4.ScrollSpy.html" 
+        class="waves-effect waves-light btn   light-blue green darken-4">Scrollspy</a></div>
+            <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.5.Toast et tooltips.html"
+                class="waves-effect waves-light btn   light-blue green darken-4">Tost et Tooltip</a></div>
+      <div class="col s12 m-6 l-3"><a style="width: 100%; margin: 0 0 5px 0;" href="./3.6.Waves.html" 
+          class="waves-effect waves-light btn   light-blue green darken-4">Waves</a></div>
+  </div>
+</div>
+
+<hr>
+<br><br>
+
+  <!-- ############################################## Début de la formation -->
+
+  <div class="container">
+  <h5>Collapse</h5>
+<!-- collapsible = sur la liste -->
+<!-- Dans les Li -->
+<!-- collapsinle-header = pour une icones -->
+<!-- collapsinble-body = pour le contenu -->
+<ul class="collapsible expandable popout">
+  <li>
+    <div id="collapse" class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+</ul>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.collapsible');
+      var instances = M.Collapsible.init(elems, {
+        // durée de fermeture
+        outDuration: 2000,
+        // durée d'ouverture
+        inDuration: 600,
+        // permet de tous les ouvrir d'un coup ajouter la classe expandable à collapsible
+        accordion: false
+      });
+    });
+
+// on peut ajouter la class popout  à collapsible pour un effet popout
+</script>
+
+<br><br><br>
+<hr>
+  <div class="container">
+    <h5>Dropdown</h5>
+  
+    <!-- Dropdown Trigger -->
+    <!-- dropdown-trigger = sur un lien pour l'action avec data-target='dropdown1'  -->
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Cliquer ici</a>
+  
+    <!-- Dropdown Structure -->
+    <!-- sur la liste = id="dropdown1" et class='dropdown-content' -->
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider" tabindex="-1"></li>
+      <li><a href="#!">three</a></li>
+      <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+    </ul>
+  
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+      });
+    </script>
+
+  </div>
+
+  
+
+
+<br><br><br>
+<br><br><br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
